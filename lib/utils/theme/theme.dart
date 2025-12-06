@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:up_store/utils/constants/colors.dart';
+import 'package:up_store/utils/theme/widget_theme/checkbox_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/chip_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/text_theme.dart';
 
@@ -17,7 +18,8 @@ class UAppTheme{
     textTheme: UTextTheme.lightTextTheme,
     chipTheme: UChipTheme.lightChipTheme,
     scaffoldBackgroundColor: UColors.white,
-    appBarTheme: UAppTheme.lightTheme
+    appBarTheme: UAppTheme.lightTheme,
+    checkboxTheme: UcheckBoxTheme.lightCheckBoxTheme
 
   );
   static ThemeData darkThem = ThemeData(
@@ -29,6 +31,7 @@ class UAppTheme{
       textTheme: UTextTheme.darkTextTheme,
     chipTheme: UChipTheme.darkChipTheme,
     scaffoldBackgroundColor: UColors.black,
-    appBarTheme: UAppTheme.darkThem
+    appBarTheme: UAppTheme.darkThem,
+      checkboxTheme: UcheckBoxTheme.darkCheckBoxTheme
   );
 }
