@@ -17,6 +17,7 @@ class UAppTheme{
     textTheme: UTextTheme.lightTextTheme,
     chipTheme: UChipTheme.lightChipTheme,
     scaffoldBackgroundColor: UColors.white,
+    appBarTheme: UAppTheme.lightTheme
 
   );
   static ThemeData darkThem = ThemeData(
@@ -27,6 +28,7 @@ class UAppTheme{
       disabledColor: UColors.grey,
       textTheme: UTextTheme.darkTextTheme,
     chipTheme: UChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: UColors.black
+    scaffoldBackgroundColor: UColors.black,
+    appBarTheme: UAppTheme.darkThem
   );
 }
