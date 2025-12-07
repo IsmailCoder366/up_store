@@ -1,86 +1,54 @@
 name: up_store
 description: "A new Flutter project."
 
-
-publish_to: 'none' 
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
   sdk: ^3.9.2
 
- #----------PACKAGES---------
+#----------PACKAGES---------
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
 
+  #-----UTILITIES---------
+  flutter_native_splash: ^2.4.7
 
-
-
- #---------------------------
+#---------------------------
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^5.0.0
 
-
 flutter:
-
 
   uses-material-design: true
 
   #--------[ASSETS]-----------
   assets:
-    - assets/logo
-
+    - assets/logo/
 
   #--------[FONTS]-----------
-  
   fonts:
-    - family: 'Nunito'
+    - family: Nunito
       fonts:
-        - assets/fonts/Nunito-Light.ttf
-        - weight: 300
-        - assets/fonts/Nunito-Regular.ttf
-        - weight: 400
-        - assets/fonts/Nunito-Italic.ttf
-        - style: italic
-        - assets/fonts/Nunito-Medium.ttf
-        - weight: 500
-        - assets/fonts/Nunito-MediumItalic.ttf
-        - weight: 500
-        - style: italic
-        - assets/fonts/Nunito-SemiBold.ttf
-        - weight: 600
-        - assets/fonts/Nunito-Bold.ttf
-        - weight: 800
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+        - asset: assets/fonts/Nunito-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Nunito-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Nunito-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito-Bold.ttf
+          weight: 800
