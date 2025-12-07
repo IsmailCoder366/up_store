@@ -3,6 +3,7 @@ import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/theme/widget_theme/bottom_sheet_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/checkbox_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/chip_theme.dart';
+import 'package:up_store/utils/theme/widget_theme/elevated_button_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/text_theme.dart';
 
 class UAppTheme{
@@ -21,7 +22,8 @@ class UAppTheme{
     scaffoldBackgroundColor: UColors.white,
     appBarTheme: UAppTheme.lightTheme,
     checkboxTheme: UcheckBoxTheme.lightCheckBoxTheme,
-    bottomSheetTheme: UBottomSheetTheme.lightBottomSheetTheme
+    bottomSheetTheme: UBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: UElevatedButtonTheme.lightElevatedButtonTheme
 
   );
   static ThemeData darkThem = ThemeData(
@@ -35,6 +37,7 @@ class UAppTheme{
     scaffoldBackgroundColor: UColors.black,
     appBarTheme: UAppTheme.darkThem,
       checkboxTheme: UcheckBoxTheme.darkCheckBoxTheme,
-    bottomSheetTheme: UBottomSheetTheme.darkBottomSheetTheme
+    bottomSheetTheme: UBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: UElevatedButtonTheme.darkElevatedButtonTheme
   );
 }
