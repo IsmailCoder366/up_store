@@ -4,6 +4,8 @@ import 'package:up_store/utils/theme/widget_theme/bottom_sheet_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/checkbox_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/chip_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/elevated_button_theme.dart';
+import 'package:up_store/utils/theme/widget_theme/outline_button_theme.dart';
+import 'package:up_store/utils/theme/widget_theme/text_field_theme.dart';
 import 'package:up_store/utils/theme/widget_theme/text_theme.dart';
 
 class UAppTheme{
@@ -23,7 +25,9 @@ class UAppTheme{
     appBarTheme: UAppTheme.lightTheme,
     checkboxTheme: UcheckBoxTheme.lightCheckBoxTheme,
     bottomSheetTheme: UBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: UElevatedButtonTheme.lightElevatedButtonTheme
+    elevatedButtonTheme: UElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: UOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: UTextFormFieldTheme.lightInputDecorationTheme
 
   );
   static ThemeData darkThem = ThemeData(
@@ -38,6 +42,8 @@ class UAppTheme{
     appBarTheme: UAppTheme.darkThem,
       checkboxTheme: UcheckBoxTheme.darkCheckBoxTheme,
     bottomSheetTheme: UBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: UElevatedButtonTheme.darkElevatedButtonTheme
+    elevatedButtonTheme: UElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: UOutlinedButtonTheme.darkOutlinedButtonTheme,
+      inputDecorationTheme: UTextFormFieldTheme.darkInputDecorationTheme
   );
 }
