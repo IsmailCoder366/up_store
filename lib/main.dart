@@ -10,7 +10,7 @@ void main() {
 
 
   /// flutter native splash
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   runApp(const MyApp());
 }
