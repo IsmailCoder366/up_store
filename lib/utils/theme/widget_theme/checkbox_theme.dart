@@ -7,6 +7,7 @@ import '../../constants/colors.dart';
 class UcheckBoxTheme{
   UcheckBoxTheme._();
 
+  /// Light Mode
   static CheckboxThemeData lightCheckBoxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(USize.xs)),
     checkColor: WidgetStateProperty.resolveWith((state){
@@ -24,6 +25,8 @@ class UcheckBoxTheme{
       }
     })
   );
+
+  /// Dark Mode
   static CheckboxThemeData darkCheckBoxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(USize.xs)),
     checkColor: WidgetStateProperty.resolveWith((state){

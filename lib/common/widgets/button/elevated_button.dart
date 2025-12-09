@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:up_store/utils/constants/helpers/device_helpers.dart';
 
 class UElevatedButton extends StatelessWidget {
   final Widget child;
@@ -11,8 +12,12 @@ class UElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-        onPressed: onPressed, child: child);
-
+    return SizedBox(
+      height: UDeviceHelper.getAppBarHeight(),
+      width: UDeviceHelper.getScreenWidth(context),
+      child: ElevatedButton(
+          onPressed: onPressed, child: child),
+    );
+        
   }
 }

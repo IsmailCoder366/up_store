@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:up_store/features/authentication/screens/login/login.dart';
 
 class OnboardingController extends GetxController{
   static OnboardingController get instance => Get.find();
@@ -25,7 +26,7 @@ class OnboardingController extends GetxController{
   /// update current index and jump to the next page
   void nextPage(){
       if(currentIndex.value == 2){
-        return;
+        Get.offAll(() => LoginScreen());
       }
       currentIndex.value++;
       pageController.jumpToPage(currentIndex.value);
