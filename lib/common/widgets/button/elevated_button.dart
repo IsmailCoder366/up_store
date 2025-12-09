@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:up_store/utils/constants/sizes.dart';
 
 class UElevatedButton extends StatelessWidget {
   final Widget child;
