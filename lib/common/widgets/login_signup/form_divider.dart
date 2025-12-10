@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 
-class ULoginDivider extends StatelessWidget {
-  const ULoginDivider({
+class ULoginSignUp extends StatelessWidget {
+  const ULoginSignUp({
     super.key,
 
     required this.title,

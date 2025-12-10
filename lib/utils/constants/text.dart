@@ -1,11 +1,13 @@
 class UTexts{
   UTexts._();
 
+
+  /// Onboarding Constants
+
   /// Onboarding Titles
   static const String onboardingTitle1 = 'Welcome to UP Store';
   static const String onboardingTitle2 = 'Shop Everything You Love';
   static const String onboardingTitle3 = 'Fast & Reliable Delivery';
-
 
   /// Onboarding Subtitles
   static const String onboardingSubtitle1 = 'Your one-stop destination for effortless and enjoyable shopping';
@@ -22,5 +24,35 @@ class UTexts{
   static const String login = 'Login';
   static const String createAccount = 'Create Account';
   static const String orSignInWith = 'Or Sign In With';
+
+
+
+  /// signup constants
+  static const String signUpTitle = 'Let’s Get You Registered';
+  static const String signUpFirstName = 'First Name';
+  static const String signUpLastName = 'Last Name';
+  static const String signUpEmail = 'Email';
+  static const String signUpPhoneNum = 'Phone Number';
+  static const String signUpPassword = 'Password?';
+  static const String iAgreeto = 'I agree to ';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String and = ' and ';
+  static const String termsOfUse = 'Terms of use';
+  static const String signUpCreateAccount = 'Create Account';
+  static const String orSignUpWith = 'Or Sign Up With';
+
+
+  /// Forget Password Constant
+  static const String forgetPasswordTitle = 'Forget Password';
+  static const String forgetPasswordSubTitle = 'No worries! Enter your registered email address, and we’ll help you reset your password';
+  static const String forgetPasswordEmail = 'Email';
+  static const String forgetPasswordSubmit= 'Submit';
+
+  /// Reset Password Screen
+  static const String resetForgetPasswordHeading = 'Password Reset Email Sent';
+  static const String resetForgetPasswordSubHeading = 'unknownpro@gmail.com';
+  static const String resetForgetPasswordBody = 'We’ve sent a password reset link to your email. Please check your inbox and follow the instructions to reset your password';
+  static const String resetForgetPasswordDoneButton = 'Done';
+  static const String resetForgetPasswordResendEmailButton = 'Resend Email';
 
 }

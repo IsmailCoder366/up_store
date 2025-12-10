@@ -10,4 +10,7 @@ class UImages{
   /// logos
   static const String facebookIcon = 'assets/logo/facebook-icon.png';
   static const String googleIcon = 'assets/logo/google-icon.png';
+
+  /// Images
+  static const String newMessage = 'assets/images/New message.png';
 }

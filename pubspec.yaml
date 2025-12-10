@@ -36,6 +36,7 @@ flutter:
   #--------[ASSETS]-----------
   assets:
     - assets/logo/
+    - assets/images/
     - assets/animations/
 
   #--------[FONTS]-----------

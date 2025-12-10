@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:up_store/common/styles/padding.dart';
+import 'package:up_store/common/widgets/button/social_buttons.dart';
 import 'package:up_store/common/widgets/login_signup/form_divider.dart';
 import 'package:up_store/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:up_store/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:up_store/features/authentication/screens/login/widgets/social_buttons.dart';
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 import 'package:up_store/utils/constants/text.dart';
@@ -46,9 +46,10 @@ class _LoginScreenState extends State<LoginScreen> {
               /// ------[Divider]--------
         
         
-              ULoginDivider(title : UTexts.orSignInWith),
+              ULoginSignUp(title : UTexts.orSignInWith),
               SizedBox(height: USize.spaceBtwSections),
-        
+
+
         
               /// ------[Footer]------
         
@@ -61,10 +62,6 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-
-
-
-
 
 
 

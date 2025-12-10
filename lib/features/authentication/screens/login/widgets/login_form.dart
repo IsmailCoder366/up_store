@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:up_store/common/widgets/button/elevated_button.dart';
+import 'package:up_store/features/authentication/screens/forget_password/forget_password.dart';
+import 'package:up_store/features/authentication/screens/signup/signup.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 import 'package:up_store/utils/constants/text.dart';
 
@@ -46,7 +50,9 @@ class ULoginForm extends StatelessWidget {
             ),
 
             /// Forgot Password
-            TextButton(onPressed: (){}, child: Text(UTexts.forgotPassword))
+            TextButton(onPressed: (){
+              Get.to(ForgetPassword());
+            }, child: Text(UTexts.forgotPassword))
 
           ],
         ),
@@ -55,7 +61,11 @@ class ULoginForm extends StatelessWidget {
         UElevatedButton(child: Text(UTexts.login), onPressed: (){}),
         SizedBox(height: USize.spaceBtwItems / 2),
         /// Create Account
-        UElevatedButton(child: Text(UTexts.createAccount), onPressed: (){}),
+        SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(child: Text(UTexts.createAccount), onPressed: (){
+              Get.to(Signup());
+            })),
 
 
       ],
