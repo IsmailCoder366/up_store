@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:up_store/common/widgets/button/elevated_button.dart';
+import 'package:up_store/features/authentication/screens/signup/verify_email.dart';
 import 'package:up_store/features/authentication/screens/signup/widgets/privacy_policy_checkbox.dart';
 import 'package:up_store/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:up_store/utils/constants/colors.dart';
@@ -79,7 +82,7 @@ class USignUpForm extends StatelessWidget {
 
         /// Button
         UElevatedButton(child: Text(UTexts.createAccount), onPressed: (){
-
+        Get.to(VerifyEmailScreen());
         })
       ],
     );

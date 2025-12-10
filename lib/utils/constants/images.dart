@@ -12,5 +12,6 @@ class UImages{
   static const String googleIcon = 'assets/logo/google-icon.png';
 
   /// Images
-  static const String newMessage = 'assets/images/New message.png';
+  static const String newMessage = 'assets/images/verify_email.png';
+  static const String accountCreatedSuccessfully = 'assets/images/account_created_successfully.png';
 }

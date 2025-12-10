@@ -55,4 +55,12 @@ class UTexts{
   static const String resetForgetPasswordDoneButton = 'Done';
   static const String resetForgetPasswordResendEmailButton = 'Resend Email';
 
+  /// Verfiy Email Address Screen
+  static const String verfiyEmailAddress = 'Verify your email address!';
+  static const String uContinue = 'Continue';
+
+  /// Account Created Successfully
+  static const String accountSuccessTitle = 'Your account successfully created';
+  static const String accountSuccessBody = 'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
+
 }
