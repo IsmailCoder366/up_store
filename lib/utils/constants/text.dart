@@ -66,4 +66,7 @@ class UTexts{
   /// AppBar text consts
   static const String googMorning = 'Goog Morning';
   static const String unknownPro = 'Unknown Pro';
+
+  /// search bar consts
+  static const String searchInStore = 'Search in Store';
 }

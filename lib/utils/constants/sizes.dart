@@ -53,5 +53,11 @@ class USize {
   // Grid view spacing
   static const double gridViewSpacing = 16.0;
 
+  // card sizes
+  static const double primaryHeaderHeight = 320;
+
+  // search bar size
+  static const double searchBarHeight = 55.0;
+
 
 }
