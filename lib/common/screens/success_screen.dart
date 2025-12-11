@@ -2,12 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:up_store/common/screens/success_screen.dart';
 import 'package:up_store/common/styles/padding.dart';
 import 'package:up_store/common/widgets/button/elevated_button.dart';
 import 'package:up_store/features/authentication/screens/login/login.dart';
-import 'package:up_store/utils/constants/images.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 import 'package:up_store/utils/constants/text.dart';
 

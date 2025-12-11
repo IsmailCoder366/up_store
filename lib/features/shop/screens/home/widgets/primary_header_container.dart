@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:up_store/common/widgets/custom_shapes/circular_container.dart';
-import 'package:up_store/common/widgets/custom_shapes/clipper/custom_rounded_clipper.dart';
 import 'package:up_store/common/widgets/custom_shapes/rounded_edges_container.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/device_helpers.dart';

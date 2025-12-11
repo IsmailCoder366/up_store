@@ -5,9 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:up_store/common/widgets/button/elevated_button.dart';
 import 'package:up_store/features/authentication/screens/signup/verify_email.dart';
 import 'package:up_store/features/authentication/screens/signup/widgets/privacy_policy_checkbox.dart';
-import 'package:up_store/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:up_store/utils/constants/colors.dart';
-import 'package:up_store/utils/constants/helpers/helper_function.dart';
+
 import 'package:up_store/utils/constants/sizes.dart';
 import 'package:up_store/utils/constants/text.dart';
 

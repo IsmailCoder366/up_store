@@ -63,4 +63,7 @@ class UTexts{
   static const String accountSuccessTitle = 'Your account successfully created';
   static const String accountSuccessBody = 'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
 
+  /// AppBar text consts
+  static const String googMorning = 'Goog Morning';
+  static const String unknownPro = 'Unknown Pro';
 }
