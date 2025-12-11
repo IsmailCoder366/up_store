@@ -5,6 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:up_store/common/widgets/button/elevated_button.dart';
 import 'package:up_store/features/authentication/screens/forget_password/forget_password.dart';
 import 'package:up_store/features/authentication/screens/signup/signup.dart';
+import 'package:up_store/navigation_menu.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 import 'package:up_store/utils/constants/text.dart';
 
@@ -58,7 +59,9 @@ class ULoginForm extends StatelessWidget {
         ),
         SizedBox(height: USize.spaceBtwSections),
         /// Sign In
-        UElevatedButton(child: Text(UTexts.login), onPressed: (){}),
+        UElevatedButton(child: Text(UTexts.login), onPressed: (){
+          Get.to(NavigationMenu());
+        }),
         SizedBox(height: USize.spaceBtwItems / 2),
         /// Create Account
         SizedBox(
