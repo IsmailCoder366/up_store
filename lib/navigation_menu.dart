@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:up_store/utils/constants/colors.dart';
+import 'package:up_store/utils/constants/helpers/helper_function.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
+    bool dark = UHelperFunction.isDarkMode(context);
     final controller = Get.put(NavigationController());
 
     return Scaffold(
@@ -15,8 +17,8 @@ class NavigationMenu extends StatelessWidget {
       bottomNavigationBar: Obx(
         () => NavigationBar(
           elevation: 0,
-          backgroundColor: UColors.light,
-          indicatorColor: UColors.black.withValues(alpha: 0.1),
+          backgroundColor: dark ? UColors.dark : UColors.light,
+          indicatorColor: dark ? UColors.light.withValues(alpha: 0.1) : UColors.black.withValues(alpha: 0.1),
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) {
             controller.selectedIndex.value = index;
