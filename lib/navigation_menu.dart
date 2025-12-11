@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:up_store/features/shop/screens/home/home.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 
@@ -45,9 +46,7 @@ class NavigationController extends GetxController {
 
 
     List<Widget> screens = [
-      Container(
-        color: Colors.green,
-      ),
+      HomeScreen(),
       Container(
         color: Colors.blue,
       ),
