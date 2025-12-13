@@ -31,7 +31,7 @@ class VerifyEmailScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               /// Image
-              Image.asset(UImages.newMessage),
+              Image.asset(UImages.accountCreatedImage),
               SizedBox(height: USize.spaceBtwSections),
 
               /// Heading
@@ -50,7 +50,7 @@ class VerifyEmailScreen extends StatelessWidget {
               UElevatedButton(child: Text(UTexts.uContinue), onPressed: (){
                   Get.to(SuccessScreen(title: UTexts.accountSuccessTitle,
                   subTitle: UTexts.accountSuccessBody,
-                    image: UImages.accountCreatedSuccessfully,
+                    image: UImages.accountCreatedImage,
                     onPressed: (){
                     
                     },

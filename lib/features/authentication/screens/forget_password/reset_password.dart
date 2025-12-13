@@ -29,7 +29,7 @@ class ResetPasswordScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             /// Image
-            Image.asset(UImages.newMessage),
+            Image.asset(UImages.accountCreatedImage),
             SizedBox(height: USize.spaceBtwSections),
 
             /// Heading
