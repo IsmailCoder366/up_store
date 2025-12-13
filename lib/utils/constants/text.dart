@@ -55,7 +55,7 @@ class UTexts{
   static const String resetForgetPasswordDoneButton = 'Done';
   static const String resetForgetPasswordResendEmailButton = 'Resend Email';
 
-  /// Verfiy Email Address Screen
+  /// Verify Email Address Screen
   static const String verfiyEmailAddress = 'Verify your email address!';
   static const String uContinue = 'Continue';
 
@@ -69,4 +69,7 @@ class UTexts{
 
   /// search bar consts
   static const String searchInStore = 'Search in Store';
+
+  /// Popular Categories consts
+  static const String popularCategories = 'Popular Categories';
 }

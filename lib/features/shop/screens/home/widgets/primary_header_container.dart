@@ -21,8 +21,8 @@ final Widget child;
       
             /// Circular Container
             Positioned(
-              top: -200,
-              right: -180,
+              top: -150,
+              right: -150,
               child: UCircularContainer(
                 height: USize.primaryHeaderHeight,
                 width: USize.primaryHeaderHeight,
@@ -35,7 +35,7 @@ final Widget child;
             /// Circular Container
             Positioned(
                 top: 50,
-                right: -300,
+                right: -250,
                 child: UCircularContainer(
                 height: USize.primaryHeaderHeight,
                   width: USize.primaryHeaderHeight,
