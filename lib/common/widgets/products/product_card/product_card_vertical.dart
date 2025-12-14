@@ -21,11 +21,12 @@ class UProductCardVertical extends StatelessWidget {
       onTap: () {},
       child: Container(
         width: 180,
+
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: UShadow.verticalProductShadow,
           borderRadius: BorderRadius.circular(USize.productImageRadius),
-          color: dark ? UColors.grey : UColors.white,
+          color: dark ? UColors.dark : UColors.white,
         ),
         child: Column(
           children: [
