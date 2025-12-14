@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:up_store/utils/constants/sizes.dart';
+
 
 
 class USectionHeading extends StatelessWidget {

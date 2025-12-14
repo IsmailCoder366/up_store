@@ -9,13 +9,16 @@ import 'package:up_store/utils/constants/sizes.dart';
 class UBrandCard extends StatelessWidget {
   const UBrandCard({
     super.key,
+    this.showBorder = true,
   });
+
+  final bool showBorder;
 
   @override
   Widget build(BuildContext context) {
     return URoundedContainer(
       width: USize.brandCardWidth,
-      showBorder: true,
+      showBorder: showBorder,
       padding: EdgeInsets.all(USize.sm),
       backgroundColor: Colors.transparent,
       child: Row(

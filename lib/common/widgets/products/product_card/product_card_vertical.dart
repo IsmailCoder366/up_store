@@ -4,8 +4,7 @@ import 'package:up_store/common/styles/shadow.dart';
 import 'package:up_store/common/widgets/custom_shapes/rounded_container.dart';
 import 'package:up_store/common/widgets/icon/circular_icon.dart';
 import 'package:up_store/common/widgets/images/rounded_image.dart';
-import 'package:up_store/common/widgets/products/product_card/product_card_vertical.dart';
-import 'package:up_store/common/widgets/texts/brand_title_text.dart';
+
 import 'package:up_store/common/widgets/texts/brand_title_with_verify_icon.dart';
 import 'package:up_store/common/widgets/texts/product_price_text.dart';
 import 'package:up_store/common/widgets/texts/product_title_text.dart';

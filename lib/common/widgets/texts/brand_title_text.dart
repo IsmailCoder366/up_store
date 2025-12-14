@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:up_store/utils/constants/colors.dart';
+
 import 'package:up_store/utils/constants/enums.dart';
 
 class UBrandTitleText extends StatelessWidget {
