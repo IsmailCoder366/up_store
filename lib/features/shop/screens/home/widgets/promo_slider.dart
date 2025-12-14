@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:up_store/common/widgets/images/rounded_image.dart';
 import 'package:up_store/features/shop/controllers/home_controller.dart';
 import 'package:up_store/features/shop/screens/home/widgets/banners_dot_navigation.dart';
-import 'package:up_store/utils/constants/images.dart';
+
 import 'package:up_store/utils/constants/sizes.dart';
 
 class UPromoSlider extends StatelessWidget {

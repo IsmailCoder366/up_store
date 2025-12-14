@@ -72,4 +72,7 @@ class UTexts{
 
   /// Popular Categories consts
   static const String popularCategories = 'Popular Categories';
+
+  /// Section Heading
+  static const String sectionHeading = 'Popular Products';
 }

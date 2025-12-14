@@ -32,6 +32,7 @@ class URounedImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -39,17 +40,19 @@ class URounedImage extends StatelessWidget {
         width: width,
         padding: padding,
         decoration: BoxDecoration(
+
           border: border,
           color: backgroundColor,
           borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: ClipRRect(
+
           borderRadius: applyImageRadius
               ? BorderRadius.circular(borderRadius)
               : BorderRadius.zero,
           child: Image(
               image: isNetworkImage ? NetworkImage(imageUrl) : AssetImage(
-                  imageUrl)),
+                  imageUrl), ),
         ),
       ),
     );

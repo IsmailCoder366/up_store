@@ -38,7 +38,7 @@ class UHomeCategories extends StatelessWidget {
                 return UVerticalImageText(
                       textColor: UColors.white,
                       title: 'Sports Categories',
-                      image: UImages.running
+                      image: UImages.sportsShoesIcon
 
                 );
               },
