@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:up_store/common/widgets/custom_shapes/circular_container.dart';
 import 'package:up_store/common/widgets/custom_shapes/rounded_edges_container.dart';
+import 'package:up_store/features/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/device_helpers.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 
 class UPrimaryHeaderContainer extends StatelessWidget {
   const UPrimaryHeaderContainer({
-    super.key, required this.child,
+    super.key, required this.child, required this.height,
   });
-final Widget child;
+  final Widget child;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return URoundedEdges(
       child: Container(
-        height: USize.primaryHeaderHeight,
+        height: height,
         color: UColors.primary,
         child: Stack(
           children: [
@@ -24,8 +26,8 @@ final Widget child;
               top: -150,
               right: -150,
               child: UCircularContainer(
-                height: USize.primaryHeaderHeight,
-                width: USize.primaryHeaderHeight,
+                height: USize.homePrimaryHeaderHeight,
+                width: USize.homePrimaryHeaderHeight,
                 backgroundColor: UColors.white.withValues(alpha: 0.1),
       
               ),
@@ -37,8 +39,8 @@ final Widget child;
                 top: 50,
                 right: -250,
                 child: UCircularContainer(
-                height: USize.primaryHeaderHeight,
-                  width: USize.primaryHeaderHeight,
+                height: USize.homePrimaryHeaderHeight,
+                  width: USize.homePrimaryHeaderHeight,
                   backgroundColor: UColors.white.withValues(alpha: 0.1),
                 )
             ),

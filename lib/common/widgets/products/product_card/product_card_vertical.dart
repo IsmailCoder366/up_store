@@ -4,6 +4,9 @@ import 'package:up_store/common/styles/shadow.dart';
 import 'package:up_store/common/widgets/custom_shapes/rounded_container.dart';
 import 'package:up_store/common/widgets/icon/circular_icon.dart';
 import 'package:up_store/common/widgets/images/rounded_image.dart';
+import 'package:up_store/common/widgets/products/product_card/product_card_vertical.dart';
+import 'package:up_store/common/widgets/texts/brand_title_text.dart';
+import 'package:up_store/common/widgets/texts/brand_title_with_verify_icon.dart';
 import 'package:up_store/common/widgets/texts/product_price_text.dart';
 import 'package:up_store/common/widgets/texts/product_title_text.dart';
 import 'package:up_store/utils/constants/colors.dart';
@@ -38,7 +41,7 @@ class UProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   /// Thumbnail
-                  URounedImage(imageUrl: UImages.productImage1),
+                  URoundedImage(imageUrl: UImages.productImage1),
 
                   /// Discount Tag
                   Positioned(
@@ -82,25 +85,11 @@ class UProductCardVertical extends StatelessWidget {
                   /// product name
                   UProductTitleText(title: 'Blue Bata Shoes', smallSize: true),
                   SizedBox(height: USize.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      /// Brand
-                      Text(
-                        'Bata',
-                        style: Theme.of(
-                          context,
-                        ).textTheme.labelMedium!.apply(color: UColors.darkGrey),
-                        textAlign: TextAlign.left,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(width: USize.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: UColors.primary,
-                        size: USize.iconXs,
-                      ),
-                    ],
+
+                  /// product brand
+                  UBrandTitleWithVerifyIcon(
+                    title: 'Bata',
+
                   ),
                 ],
               ),
@@ -139,3 +128,5 @@ class UProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+

@@ -32,10 +32,11 @@ class HomeScreen extends StatelessWidget {
             Stack(
               children: [
                 /// total height + 10
-                SizedBox(height: USize.primaryHeaderHeight + 10),
+                SizedBox(height: USize.homePrimaryHeaderHeight + 10),
 
                 /// primary header container
                 UPrimaryHeaderContainer(
+                  height: USize.homePrimaryHeaderHeight,
                   child: Column(
                     children: [
                       /// App Bar

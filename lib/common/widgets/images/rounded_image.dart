@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 
-class URounedImage extends StatelessWidget {
-  const URounedImage({
+class URoundedImage extends StatelessWidget {
+  const URoundedImage({
     super.key,
 
     this.width,

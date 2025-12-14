@@ -22,7 +22,7 @@ class UPromoSlider extends StatelessWidget {
             children: [
         /// Carousel Slider
         CarouselSlider(
-        items: banners.map((banner) => URounedImage(imageUrl: banner)).toList(),
+        items: banners.map((banner) => URoundedImage(imageUrl: banner)).toList(),
     options: CarouselOptions(viewportFraction: 1.0, onPageChanged: (index, reason) => controller.onPageChanged(index),),
           carouselController: controller.carouselController,
     ),
