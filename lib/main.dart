@@ -6,7 +6,7 @@ import 'my_app.dart' show MyApp;
 void main() {
 
     /// widgets flutter binding
-  final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 
 
   /// flutter native splash

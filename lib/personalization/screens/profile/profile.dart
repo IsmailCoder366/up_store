@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import 'package:up_store/common/widgets/custom_shapes/primary_header_container.dart';
-import 'package:up_store/common/widgets/images/circular_image.dart';
 import 'package:up_store/common/widgets/texts/section_heading.dart';
 import 'package:up_store/personalization/screens/widgets/profile_primary_header.dart';
 import 'package:up_store/personalization/screens/widgets/settings_menu_tile.dart';
 import 'package:up_store/personalization/screens/widgets/user_profile_tile.dart';
-import 'package:up_store/utils/constants/images.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -52,9 +49,11 @@ class ProfileScreen extends StatelessWidget {
                     subTitle: 'In-progress and Completed Orders',
                     icon: Iconsax.bag_tick,
                   ),
+                  SizedBox(height: USize.spaceBtwSections),
                   SizedBox(
                       width: double.infinity,
-                      child: OutlinedButton(onPressed: (){}, child: Text('LogOut')))
+                      child: OutlinedButton(onPressed: (){}, child: Text('LogOut'))),
+                  SizedBox(height: USize.spaceBtwSections),
                 ]
               ),
             ),
