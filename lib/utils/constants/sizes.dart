@@ -56,6 +56,7 @@ class USize {
   // card sizes
   static const double homePrimaryHeaderHeight = 320;
   static const double storePrimaryHeaderHeight = 170;
+  static const double profilePrimaryHeaderHeight = 170;
 
   // search bar size
   static const double searchBarHeight = 55.0;

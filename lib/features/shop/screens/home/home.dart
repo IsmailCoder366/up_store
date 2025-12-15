@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:up_store/common/widgets/custom_shapes/primary_header_container.dart';
 
 import 'package:up_store/common/widgets/layout/grid_layout.dart';
 import 'package:up_store/common/widgets/products/product_card/product_card_vertical.dart';
@@ -10,7 +11,6 @@ import 'package:up_store/features/shop/controllers/home_controller.dart';
 
 import 'package:up_store/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:up_store/features/shop/screens/home/widgets/home_categories.dart';
-import 'package:up_store/features/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:up_store/features/shop/screens/home/widgets/promo_slider.dart';
 
 

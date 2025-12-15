@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:up_store/common/widgets/app_bar/app_bar.dart';
+import 'package:up_store/common/widgets/custom_shapes/primary_header_container.dart';
 import 'package:up_store/common/widgets/products/cart/cart_counter_icon.dart';
 import 'package:up_store/common/widgets/textfields/search_bar.dart';
-import 'package:up_store/features/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 

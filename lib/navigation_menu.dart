@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:up_store/features/shop/screens/home/home.dart';
 import 'package:up_store/features/shop/screens/store/store.dart';
 import 'package:up_store/features/shop/screens/wishlist/wishlist.dart';
+import 'package:up_store/personalization/screens/profile/profile.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 
@@ -53,9 +54,7 @@ class NavigationController extends GetxController {
       HomeScreen(),
       StoreScreen(),
       WishListScreen(),
-      Container(
-        color: Colors.black,
-      ),
+      ProfileScreen()
 
     ];
 }
