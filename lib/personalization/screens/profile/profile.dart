@@ -52,9 +52,13 @@ class ProfileScreen extends StatelessWidget {
                     subTitle: 'In-progress and Completed Orders',
                     icon: Iconsax.bag_tick,
                   ),
-                ],
+                  SizedBox(
+                      width: double.infinity,
+                      child: OutlinedButton(onPressed: (){}, child: Text('LogOut')))
+                ]
               ),
             ),
+
           ],
         ),
       ),
