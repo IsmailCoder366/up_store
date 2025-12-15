@@ -5,6 +5,8 @@ import 'package:up_store/common/widgets/icon/circular_icon.dart';
 import 'package:up_store/common/widgets/layout/grid_layout.dart';
 import 'package:up_store/common/widgets/products/product_card/product_card_vertical.dart';
 import 'package:up_store/navigation_menu.dart';
+import 'package:up_store/utils/constants/colors.dart';
+import 'package:up_store/utils/constants/helpers/helper_function.dart';
 import 'package:up_store/utils/constants/sizes.dart';
 
 class WishListScreen extends StatelessWidget {
@@ -12,6 +14,7 @@ class WishListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = UHelperFunction.isDarkMode(context);
     return Scaffold(
 
       /// Custom app Bar
@@ -22,6 +25,7 @@ class WishListScreen extends StatelessWidget {
         ),
         actions: [
           UCircularIcon(
+            color: dark ? UColors.darkGrey : UColors.black,
             icon: Iconsax.add,
             onPressed: () =>
                 NavigationController.instance.selectedIndex.value = 0,

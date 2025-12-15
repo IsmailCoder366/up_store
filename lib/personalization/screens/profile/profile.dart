@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'package:up_store/common/widgets/texts/section_heading.dart';
-import 'package:up_store/personalization/screens/widgets/profile_primary_header.dart';
-import 'package:up_store/personalization/screens/widgets/settings_menu_tile.dart';
-import 'package:up_store/personalization/screens/widgets/user_profile_tile.dart';
+import 'package:up_store/personalization/screens/profile/widgets/profile_primary_header.dart';
+import 'package:up_store/personalization/screens/profile/widgets/settings_menu_tile.dart';
+import 'package:up_store/personalization/screens/profile/widgets/user_profile_tile.dart';
+
 import 'package:up_store/utils/constants/sizes.dart';
 
 class ProfileScreen extends StatelessWidget {
