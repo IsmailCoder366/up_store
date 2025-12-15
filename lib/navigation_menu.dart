@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:up_store/features/shop/screens/home/home.dart';
 import 'package:up_store/features/shop/screens/store/store.dart';
+import 'package:up_store/features/shop/screens/wishlist/wishlist.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 
@@ -42,6 +43,8 @@ class NavigationMenu extends StatelessWidget {
 }
 
 class NavigationController extends GetxController {
+  static NavigationController get instance => Get.find();
+
   RxInt selectedIndex = 0.obs;
 
 
@@ -49,9 +52,7 @@ class NavigationController extends GetxController {
     List<Widget> screens = [
       HomeScreen(),
       StoreScreen(),
-      Container(
-        color: Colors.red,
-      ),
+      WishListScreen(),
       Container(
         color: Colors.black,
       ),
