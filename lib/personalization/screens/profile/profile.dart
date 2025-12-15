@@ -16,45 +16,47 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          /// primary header
-          UProfilePrimaryHeader(),
-
-          /// Details
-          Padding(
-            padding: const EdgeInsets.all(USize.defaultSpace),
-            child: Column(
-              children: [
-                /// User profile details
-                USerProfileTile(),
-                SizedBox(height: USize.spaceBtwSections),
-                /// Account setting headlines
-                USectionHeading(
-                  title: 'Account Settings',
-                  showActionButton: false,
-                ),
-
-                /// Settings Menu
-                SettingMenuTile(
-                  title: 'My Addressed',
-                  subTitle: 'Set shopping delivery addresses',
-                  icon: Iconsax.safe_home,
-                ),
-                SettingMenuTile(
-                  title: 'My Cart',
-                  subTitle: 'Add, remove products and move to checkout',
-                  icon: Iconsax.shopping_cart,
-                ),
-                SettingMenuTile(
-                  title: 'My Order',
-                  subTitle: 'In-progress and Completed Orders',
-                  icon: Iconsax.bag_tick,
-                ),
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            /// primary header
+            UProfilePrimaryHeader(),
+        
+            /// Details
+            Padding(
+              padding: const EdgeInsets.all(USize.defaultSpace),
+              child: Column(
+                children: [
+                  /// User profile details
+                  USerProfileTile(),
+                  SizedBox(height: USize.spaceBtwSections),
+                  /// Account setting headlines
+                  USectionHeading(
+                    title: 'Account Settings',
+                    showActionButton: false,
+                  ),
+        
+                  /// Settings Menu
+                  SettingMenuTile(
+                    title: 'My Addressed',
+                    subTitle: 'Set shopping delivery addresses',
+                    icon: Iconsax.safe_home,
+                  ),
+                  SettingMenuTile(
+                    title: 'My Cart',
+                    subTitle: 'Add, remove products and move to checkout',
+                    icon: Iconsax.shopping_cart,
+                  ),
+                  SettingMenuTile(
+                    title: 'My Order',
+                    subTitle: 'In-progress and Completed Orders',
+                    icon: Iconsax.bag_tick,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
