@@ -16,7 +16,11 @@ class UElevatedButton extends StatelessWidget {
       height: UDeviceHelper.getAppBarHeight(),
       width: UDeviceHelper.getScreenWidth(context),
       child: ElevatedButton(
-          onPressed: onPressed, child: child),
+          onPressed: onPressed, style: ElevatedButton.styleFrom(
+        side: BorderSide(
+          color: Colors.transparent
+        )
+      ), child: child),
     );
         
   }
