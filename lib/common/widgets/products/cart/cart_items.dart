@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+import 'package:up_store/common/widgets/images/rounded_image.dart';
+import 'package:up_store/common/widgets/texts/brand_title_with_verify_icon.dart';
+import 'package:up_store/common/widgets/texts/product_title_text.dart';
+import 'package:up_store/utils/constants/colors.dart';
+import 'package:up_store/utils/constants/helpers/helper_function.dart';
+import 'package:up_store/utils/constants/images.dart';
+import 'package:up_store/utils/constants/sizes.dart';
+
+class UCartItem extends StatelessWidget {
+  const UCartItem({
+    super.key,
+
+  });
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = UHelperFunction.isDarkMode(context);
+    return Row(
+      children: [
+
+        /// Product Image
+        URoundedImage(
+          imageUrl: UImages.productImage4a,
+          height: 60.0,
+          width: 60.0,
+          padding: EdgeInsets.all(USize.sm),
+          backgroundColor: dark ? UColors.darkerGrey : UColors.light,
+        ),
+        SizedBox(width: USize.spaceBtwItems),
+
+        /// Brand, name and variation
+        Expanded(child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+
+            /// Brand
+            UBrandTitleWithVerifyIcon(title: 'iphone'),
+
+            /// Title
+            UProductTitleText(title: 'iphone 11 64 GB W', maxLines: 1),
+
+            /// Variations or Attributes
+            RichText(text: TextSpan(
+                children: [
+                  TextSpan(text: 'Color ', style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(text: 'Green ', style: Theme.of(context).textTheme.bodyLarge),
+                  TextSpan(text: 'Storage ', style: Theme.of(context).textTheme.bodySmall),
+                  TextSpan(text: '512GB ', style: Theme.of(context).textTheme.bodyLarge),
+                ]
+            ))
+          ],
+        ))
+      ],
+    );
+  }
+}
