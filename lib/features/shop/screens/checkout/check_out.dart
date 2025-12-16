@@ -4,6 +4,7 @@ import 'package:up_store/common/widgets/app_bar/app_bar.dart';
 import 'package:up_store/common/widgets/custom_shapes/rounded_container.dart';
 import 'package:up_store/common/widgets/textfields/promo_code.dart';
 import 'package:up_store/features/shop/screens/cart/widgets/cart_items.dart';
+import 'package:up_store/features/shop/screens/checkout/widgets/billing_amount_section.dart';
 import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 import 'package:up_store/utils/constants/sizes.dart';
@@ -41,6 +42,20 @@ class CheckOutScreen extends StatelessWidget {
 
               /// Promo code text field
               UPromoCodeField(),
+              SizedBox(height: USize.spaceBtwSections),
+
+              /// Billing Section
+              URoundedContainer(
+                showBorder: true,
+                padding: EdgeInsets.all(USize.md),
+                backgroundColor: Colors.transparent,
+                child: Column(
+                  children: [
+                    /// Amount
+                    UBillingAmountSection()
+                  ],
+                ),
+              )
             ],
           ),
         ),
