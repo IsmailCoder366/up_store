@@ -4,6 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'package:up_store/common/widgets/texts/section_heading.dart';
+import 'package:up_store/features/shop/screens/order/order.dart';
 import 'package:up_store/personalization/screens/address/address.dart';
 import 'package:up_store/personalization/screens/profile/widgets/profile_primary_header.dart';
 import 'package:up_store/personalization/screens/profile/widgets/settings_menu_tile.dart';
@@ -52,7 +53,7 @@ class ProfileScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                   ),
                   SettingMenuTile(
-                    onTap: (){},
+                    onTap: () => Get.to(() => OrderScreen()),
                     title: 'My Order',
                     subTitle: 'In-progress and Completed Orders',
                     icon: Iconsax.bag_tick,

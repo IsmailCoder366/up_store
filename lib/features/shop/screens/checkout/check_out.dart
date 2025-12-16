@@ -12,7 +12,7 @@ import 'package:up_store/features/shop/screens/checkout/widgets/billing_address_
 import 'package:up_store/features/shop/screens/checkout/widgets/billing_amount_section.dart';
 import 'package:up_store/features/shop/screens/checkout/widgets/billing_payment_section.dart';
 import 'package:up_store/navigation_menu.dart';
-import 'package:up_store/utils/constants/colors.dart';
+
 import 'package:up_store/utils/constants/helpers/helper_function.dart';
 import 'package:up_store/utils/constants/images.dart';
 import 'package:up_store/utils/constants/sizes.dart';

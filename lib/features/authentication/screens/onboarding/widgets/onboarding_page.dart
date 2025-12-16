@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:up_store/utils/constants/helpers/device_helpers.dart';
-import 'package:up_store/utils/constants/sizes.dart';
+
 
 class OnboardingPage extends StatelessWidget {
 
