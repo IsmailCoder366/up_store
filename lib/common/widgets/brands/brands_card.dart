@@ -10,42 +10,47 @@ class UBrandCard extends StatelessWidget {
   const UBrandCard({
     super.key,
     this.showBorder = true,
+    this.ontap
   });
 
   final bool showBorder;
+  final VoidCallback? ontap;
 
   @override
   Widget build(BuildContext context) {
-    return URoundedContainer(
-      height: USize.brandCardHeight,
+    return GestureDetector(
+      onTap: ontap,
+      child: URoundedContainer(
+        height: USize.brandCardHeight,
 
-      showBorder: showBorder,
-      padding: EdgeInsets.all(USize.sm),
-      backgroundColor: Colors.transparent,
-      child: Row(
-        children: [
-          /// Brand Image
-          Flexible(child: URoundedImage(imageUrl: UImages.bataLogo)),
-          SizedBox(width: USize.spaceBtwItems / 2),
+        showBorder: showBorder,
+        padding: EdgeInsets.all(USize.sm),
+        backgroundColor: Colors.transparent,
+        child: Row(
+          children: [
+            /// Brand Image
+            Flexible(child: URoundedImage(imageUrl: UImages.bataLogo)),
+            SizedBox(width: USize.spaceBtwItems / 2),
 
 
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                /// Brand name & verify Icon
-                UBrandTitleWithVerifyIcon(
-                  title: 'Bata',
-                  brandTextSize: TextSizes.large,
-                ),
-                /// products Text
-                Text('172 products', style: Theme.of(context).textTheme.labelMedium, overflow: TextOverflow.ellipsis,)
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  /// Brand name & verify Icon
+                  UBrandTitleWithVerifyIcon(
+                    title: 'Bata',
+                    brandTextSize: TextSizes.large,
+                  ),
+                  /// products Text
+                  Text('172 products', style: Theme.of(context).textTheme.labelMedium, overflow: TextOverflow.ellipsis,)
 
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

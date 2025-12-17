@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:up_store/common/widgets/app_bar/tab_bar.dart';
 
 import 'package:up_store/common/widgets/brands/brands_card.dart';
 
 import 'package:up_store/common/widgets/texts/section_heading.dart';
+import 'package:up_store/features/shop/screens/brand/all_brands.dart';
 
 import 'package:up_store/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:up_store/features/shop/screens/store/widgets/store_primary_header.dart';
@@ -43,7 +45,9 @@ class StoreScreen extends StatelessWidget {
                         child: Column(
                           children: [
                             /// Brands Heading
-                            USectionHeading(title: 'Brands', onPressed: (){}),
+                            USectionHeading(title: 'Brands', onPressed: (){
+                              Get.to(() => BrandScreen());
+                            }),
                   
                             /// Brand Card
                             SizedBox(
