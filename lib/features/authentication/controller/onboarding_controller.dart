@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:up_store/features/authentication/screens/login/login.dart';
 
 class OnboardingController extends GetxController{
   static OnboardingController get instance => Get.find();
 
-
+  final storage = GetStorage();
   /// variables
    final pageController = PageController();
 
@@ -26,6 +27,7 @@ class OnboardingController extends GetxController{
   /// update current index and jump to the next page
   void nextPage(){
       if(currentIndex.value == 2){
+        storage.write('isFirstTime', false);
         Get.offAll(() => LoginScreen());
       }
       currentIndex.value++;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:up_store/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:up_store/utils/constants/colors.dart';
 import 'package:up_store/utils/theme/theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -14,7 +15,12 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.system,
         theme: UAppTheme.lightTheme,
         darkTheme: UAppTheme.darkThem,
-        home: OnboardingScreen()
+        home: Scaffold(
+          backgroundColor: UColors.primary,
+          body: Center(
+            child: CircularProgressIndicator(color: Colors.white),
+          ),
+        )
     );
   }
 }
