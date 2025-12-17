@@ -8,6 +8,7 @@ import 'package:up_store/common/widgets/products/product_card/product_card_verti
 import 'package:up_store/common/widgets/textfields/search_bar.dart';
 import 'package:up_store/common/widgets/texts/section_heading.dart';
 import 'package:up_store/features/shop/controllers/home_controller.dart';
+import 'package:up_store/features/shop/screens/all_products/all_products.dart';
 
 import 'package:up_store/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:up_store/features/shop/screens/home/widgets/home_categories.dart';
@@ -70,7 +71,9 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: USize.spaceBtwSections),
 
                 /// Section Heading
-                USectionHeading(title: UTexts.sectionHeading, onPressed: () {}),
+                USectionHeading(title: UTexts.sectionHeading, onPressed: (){
+                  Get.to(()=> AllProductsScreen());
+                }),
 
                 /// GridView of Product Card
                 UGridLayout(
