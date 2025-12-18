@@ -3,7 +3,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get/get.dart';
 import 'package:flutter/services.dart';
 
-import '../popups/snackbar_helpers.dart';
+import '../../popups/snackbar_helpers.dart';
 
 
 /// Manages the network connectivity status and provides methods to check and handle connectivity changes.

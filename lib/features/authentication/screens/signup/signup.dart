@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
 
 import 'package:up_store/common/styles/padding.dart';
 import 'package:up_store/common/widgets/button/social_buttons.dart';
 import 'package:up_store/common/widgets/login_signup/form_divider.dart';
+import 'package:up_store/features/authentication/controller/signup/signup_controller.dart';
 import 'package:up_store/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:up_store/features/authentication/screens/signup/widgets/signup_header.dart';
 import 'package:up_store/utils/constants/sizes.dart';
@@ -16,6 +19,7 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
+  final controller = Get.put(SignUpController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(

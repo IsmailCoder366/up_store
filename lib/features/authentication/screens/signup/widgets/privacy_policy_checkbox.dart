@@ -16,19 +16,22 @@ class PrivacyPolicyCheckBox extends StatelessWidget {
         Checkbox(value: true, onChanged: (value){
 
         }),
-        RichText(
-          text: TextSpan(
-              style: Theme.of(context).textTheme.bodySmall,
-              children: [
-                TextSpan(text: '${UTexts.iAgreeto}') ,
-                TextSpan(text: '${UTexts.privacyPolicy}', style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: dark ? UColors.white : UColors.primary, decoration: TextDecoration.underline)),
-                TextSpan(text: '${UTexts.and}'),
-                TextSpan(text: '${UTexts.termsOfUse}', style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: dark ? UColors.white : UColors.primary, decoration: TextDecoration.underline, )),
-              ]
+        Expanded(
+          child: RichText(
+
+            text: TextSpan(
+                style: Theme.of(context).textTheme.labelSmall,
+                children: [
+                  TextSpan(text: UTexts.iAgreeto) ,
+                  TextSpan(text: UTexts.privacyPolicy, style: Theme.of(context).textTheme.bodySmall!.copyWith(color: dark ? UColors.white : UColors.primary, decoration: TextDecoration.underline)),
+                  TextSpan(text: UTexts.and),
+                  TextSpan(text: UTexts.termsOfUse, style: Theme.of(context).textTheme.bodySmall!.copyWith(color: dark ? UColors.white : UColors.primary, decoration: TextDecoration.underline,overflow: TextOverflow.ellipsis )),
+                ]
+
+            ),
+
 
           ),
-
-
         ),
       ],
     );
